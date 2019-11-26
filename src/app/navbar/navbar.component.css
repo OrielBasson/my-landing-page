@@ -1,0 +1,35 @@
+.navbar {
+  animation-duration: 1.5s;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 161, 167, 1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 161, 167, 1);
+  box-shadow: 0px 3px 0px 0px rgba(0, 161, 167, 1);
+  width: 100%;
+  z-index: 2;
+  background-color: black;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+.navbar .navbar-nav .nav-link {
+  color: darkgray;
+  font-size: small;
+  padding: 5px;
+  padding-right: 15px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #d84677;
+}
+
+
+.navbar .navbar-nav>.active {
+  color: #000;
+  background: #d65c14;
+}
+
+.navbar .navbar-nav .nav-link>.active>a,
+.navbar .navbar-nav>.nav-link>a:hover,
+.navbar .navbar-nav>.nav-link>a:focus {
+  color: #d84677;
+
+}
