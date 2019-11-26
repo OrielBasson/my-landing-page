@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#home:before {
+
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.15;
+  /* background-image: url(../../assets/images/background.jpg);  */
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.btn {
+  animation-iteration-count: infinite;
+}
+
+#AboutTitle:hover {
+  color: #d84677;
+  animation-iteration-count: infinite;
+}
+
+#SkillsTitle:hover {
+  color: #d84677;
+  animation-iteration-count: infinite;
+}
+
+#OrielBassonTitle {
+  font-size: 110%;
+}
+
+
+.container {
+  width: 100%;
+  overflow: scroll;
+  overflow-y: scroll;
+  height: 1000px;
+}
+
+
+section {
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+}
+
+#scrollDownButton {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  text-decoration: none;
+}
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+*/ section h1 {
+  color: white;
+}
+
+div {
+  /* Profile picture ont top of background (z-index -1) */
+  z-index: 1;
+}
+
+h4 {
+
+  font-family: 'Orbitron', sans-serif;
+  color: aliceblue;
+}
+
+#about h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+#HomeContent h3 {
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  color: aliceblue;
+}
+
+h5 {
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+
+  #HomeFirstLine,
+  #HomeSecondLine {
+    font-size: 110%;
+  }
+}
+
+.viewMyWorkButton {
+  cursor: pointer;
+  color: white !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px;
+  border: 3px solid white !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+
+.viewMyWorkButton:hover {
+  color: #ffffff !important;
+  background: #00A1A7;
+  border-color: #00A1A7 !important;
+  transition: all 0.4s ease 0s;
+}

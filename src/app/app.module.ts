@@ -10,6 +10,8 @@ import { LayoutComponent } from "./layout/layout.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { MainComponent } from "./main/main.component";
 import { RouterModule } from "@angular/router";
+import { HomeSectionComponent } from './main/home-section/home-section.component';
+import { AboutSectionComponent } from './main/about-section/about-section.component';
 
 const lazyConfig = [
   {
@@ -19,7 +21,7 @@ const lazyConfig = [
 ];
 
 @NgModule({
-  declarations: [LayoutComponent, MainComponent],
+  declarations: [LayoutComponent, MainComponent, HomeSectionComponent, AboutSectionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

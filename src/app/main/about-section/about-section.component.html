@@ -1,0 +1,120 @@
+<div class="container-fluid">
+  <section id="about">
+    <div id="centerBoxUp" class="box">
+      <div id="AboutTitle" (mouseenter)="setPulseClassAnimation($event)"
+        (mouseleave)="deletePulseClassAnimation($event)" [ngClass]="getPulseClassAnimation()">
+        <div class="underline">
+          <a class="custom-underline">
+            <h3>PROFILE</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="clearfix">
+      <div id="leftBox" class="box">
+        <div class="square">
+          <i class="fas fa-exclamation"></i>
+        </div>
+        <br />
+
+        <h4 id="AboutMeTitle">About Me</h4>
+        <br />
+        <p>
+          My name is Oriel Basson and I'm from Tel-Aviv, Israel
+          <br />
+          I'm 26 years old and a Full Stack Developer since aug 2019.
+          <br />
+          I enjoy coding and deep diving into cutting edge technologies.
+          <br />
+          I also love the logic and structure of coding
+          <br />
+          and always strive to write elegant.
+        </p>
+      </div>
+
+      <div id="centerBox" class="box">
+        <div id="ProfilePictureContainer" (mouseenter)="changeClassProfilePicture($event)"
+          (mouseleave)="changeClassProfilePictureOut($event)" [ngClass]="getAnimationPictureClass()">
+          <img id="myPic" src="../../assets/images/MyPic.jpg" alt="ProfilePicture" />
+        </div>
+      </div>
+
+      <div id="rightBox" class="box">
+        <div class="square">
+          <i class="fas fa-book-reader"></i>
+        </div>
+        <br />
+
+        <h4 id="detailsTitle">My Story</h4>
+        <br />
+        <p>
+          Since I remember myself, I've always loved to expand and earn
+          <br />
+          knowledge and skills using the internet. I myself spending hours on
+          hours enjoying reading, gaming and solving problems online. Recently I
+          found a deep passion for code environment and programming and since
+          then I decided to put my perseverance to learn as much as I can to
+          improve my programming skills.
+        </p>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div id="skills">
+      <div id="SkillsTitle" (mouseenter)="setPulseClassAnimation2($event)"
+        (mouseleave)="deletePulseClassAnimation2($event)" [ngClass]="getPulseClassAnimation2()">
+        <div class="underline">
+          <a class="custom-underline">
+            <h3>SKILLS</h3>
+          </a>
+        </div>
+      </div>
+      <br />
+      <!-- Skills Slider : -->
+
+      <body>
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(../../assets/images/spring-logo.png)"></div>
+            <div class="swiper-slide" style="background-image:url(../../assets/images/spring-boot-logo.png)"></div>
+            <div class="swiper-slide" style="background-image:url(../../assets/images/angular-logo.webp)"></div>
+            <div class="swiper-slide" style="background-image:url(../../assets/images/hibernate-logo.png)"></div>
+            <div class="swiper-slide" style="background-image:url(../../assets/images/html5-logo.png)"></div>
+            <div class="swiper-slide" style="background-image:url(../../assets/images/css3-logo.png)"></div>
+            <div class="swiper-slide" style="background-image:url(../../assets/images/js-logo.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../../assets/images/mysql-logo.png)"></div>
+          </div>
+
+          <div class="swiper-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44">
+              <path d="M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z" />
+            </svg>
+          </div>
+
+          <div class="swiper-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44">
+              <path d="M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z" />
+            </svg>
+          </div>
+        </div>
+      </body>
+      <br />
+    </div>
+
+    <!-- <button (click)="scrollToThird()" type="button" class="btn"> <i style='font-size:25px' class='fa'>&#xf078;</i>   </button> -->
+
+    <!-- turkiz Footer -->
+    <div class="wrapper">
+      <!-- content -->
+      <div class="push"></div>
+    </div>
+
+    <footer class="footer"></footer>
+
+  </section>
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <section id="home">
+    <div id="particles-js"></div>
+    <br /><br /><br />
+    <div id="HomeContent" (mouseenter)="changeClassFunction($event)" (mouseleave)="changeClassFunctionOut($event)"
+      [ngClass]="getAnimationClass()">
+      <h3 id="HomeFirstLine">
+        Hi, My name is
+        <small id="OrielBassonTitle" style="color: #d84677;">Oriel Basson</small>.
+      </h3>
+      <br />
+      <h5 id="HomeSecondLine">I'm a full stack developer</h5>
+
+      <br /><br /><br /><br />
+    </div>
+
+    <div class="bounceIn">
+      <div class="button_cont">
+        <a class="viewMyWorkButton  hvr-icon-hang" (click)="scrollToSecond()" target="_blank"
+          rel="nofollow noopener">View
+          My Work <i class="fa fa-chevron-circle-down hvr-icon"></i></a>
+      </div>
+    </div>
+    <button (click)="scrollToSecond()" type="button" id="scrollDownButton" class="btn animated tada">
+      <i style="font-size:25px" class="fa">&#xf078;</i>
+    </button>
+  </section>
+</div>
