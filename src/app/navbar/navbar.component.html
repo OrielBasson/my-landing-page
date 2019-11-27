@@ -1,18 +1,9 @@
-<nav
-  class="navbar navbar-expand-lg navbar-dark sticky-top animated bounceInLeft"
->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top animated bounceInLeft">
   <a class="navbar-brand" href="#">
     <!-- To add picture of my logo here!  -->
   </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarText"
-    aria-controls="navbarText"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
@@ -20,54 +11,41 @@
     <div class="navbar-nav mx-auto">
       <ul class="navbar-nav mr-auto">
         <li class="nav-link">
-          <a class="nav-link" href="#home">HOME <i class="fas fa-home"></i> </a>
-        </li>
-        <li class="nav-link">
-          <a class="nav-link" href="#about"
-            >ABOUT ME <i class="fas fa-exclamation-circle"></i>
-          </a>
-        </li>
-        <li class="nav-link">
-          <a class="nav-link" href="#projects"
-            >PROJECTS <i class="fas fa-code"></i
-          ></a>
+          <a [className]="isHomeActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToHome($event)"
+            (click)="turnHomeActive($event)">HOME <i class="fas fa-home"></i> </a>
         </li>
 
         <li class="nav-link">
-          <a routerLink fragment="projects">TEST <i class="fas fa-code"></i></a>
+          <a [className]="isAboutActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToAbout($event)"
+            (click)="turnAboutActive($event)">ABOUT ME
+            <i class="fas fa-exclamation-circle"></i>
+          </a>
         </li>
 
         <li class="nav-link">
-          <a class="nav-link" href="#contact"
-            >CONTACT <i class="fas fa-envelope"></i>
+          <a [className]="isProjectsActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToProjects($event)"
+            (click)="turnProjectsActive($event)">PROJECTS
+            <i class="fas fa-code"></i></a>
+        </li>
+
+        <li class="nav-link">
+          <a [className]="isContactActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToContact($event)"
+            (click)="turnContactActive($event)">CONTACT <i class="fas fa-envelope"></i>
           </a>
         </li>
         <li class="nav-link">
-          <a
-            class="nav-link"
-            href="../../assets/data/Oriel Basson Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            >CV <i class="fas fa-file-alt"></i>
+          <a class="nav-link" href="../../assets/data/Oriel Basson Resume.pdf" target="_blank"
+            rel="noopener noreferrer">CV <i class="fas fa-file-alt"></i>
           </a>
         </li>
         <li class="nav-link">
-          <a
-            class="nav-link"
-            href="https://www.linkedin.com/in/orielbasson/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LINKEDIN <i class="fab fa-linkedin"></i>
+          <a class="nav-link" href="https://www.linkedin.com/in/orielbasson/" target="_blank"
+            rel="noopener noreferrer">LINKEDIN <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li class="nav-link">
-          <a
-            class="nav-link"
-            href="https://github.com/OrielBasson"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GITHUB <i class="fab fa-github"></i
-          ></a>
+          <a class="nav-link" href="https://github.com/OrielBasson" target="_blank" rel="noopener noreferrer">GITHUB <i
+              class="fab fa-github"></i></a>
         </li>
       </ul>
     </div>

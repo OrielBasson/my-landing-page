@@ -22,6 +22,14 @@ export class AboutSectionComponent implements OnInit {
     return this.classPulseAnimtaion;
   }
 
+  deletePulseClassAnimation(event) {
+    this.classPulseAnimtaion = "";
+  }
+
+  setPulseClassAnimation(event) {
+    this.classPulseAnimtaion = "animated pulse";
+  }
+
   deletePulseClassAnimation2(event) {
     this.classPulseAnimtaion2 = "";
   }

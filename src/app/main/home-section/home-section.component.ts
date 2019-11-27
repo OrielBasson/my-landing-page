@@ -81,9 +81,4 @@ export class HomeSectionComponent implements OnInit {
   scrollToThird() {
     document.getElementById("projects").scrollIntoView();
   }
-
-  @HostListener("window:scroll", ["$event"])
-  doSomething(event) {
-    this.isNavbarVisible = true;
-  }
 }

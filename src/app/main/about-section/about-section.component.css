@@ -55,9 +55,14 @@ section::after {
 }
 
 
-#AboutTitle h3,
-#SkillsTitle h3 {
-  font-size: 150%;
+#SkillsTitleWrapper {
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+#ProfileTitleWrapper {
+  animation-duration: 1s;
+  animation-delay: 2s;
 }
 
 #AboutTitle:hover,
@@ -74,20 +79,16 @@ section::after {
 #myPic {
   margin-top: 20px;
   clip-path: polygon(50% 0, 95% 27%, 95% 73%, 50% 100%, 5% 73%, 5% 27%);
-  width: 215px;
-  height: 215px;
-
+  width: 235px;
+  height: 235px;
 }
 
 @media screen and (max-width: 601px) {
   #myPic {
     width: 100px;
     height: 100px;
-
   }
 }
-
-
 
 .container {
   width: 100%;
@@ -128,20 +129,9 @@ div {
   z-index: 1;
 }
 
-h4 {
-
-  font-family: 'Orbitron', sans-serif;
-  color: aliceblue;
-}
-
 #about h3 {
   font-family: 'Orbitron', sans-serif;
-}
-
-h5 {
-  cursor: pointer;
-  font-family: 'Orbitron', sans-serif;
-  color: aliceblue;
+  font-size: 150%;
 }
 
 /* Text responsive for Phones  */
@@ -164,6 +154,7 @@ h5 {
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
+
   }
 }
 
@@ -177,29 +168,17 @@ h5 {
   padding-top: 100px;
 }
 
-
-@media screen and (max-width: 600px) {
-
-  #SkillsTitle h3,
-  #AboutTitle h3 {
-    font-size: 80%;
-  }
+#SkillsTitle h3,
+#AboutTitle h3 {
+  font-size: 150%;
 }
-
-@media screen and (max-width: 600px) {
-
-  #HomeFirstLine,
-  #HomeSecondLine {
-    font-size: 110%;
-  }
-}
-
 
 /* Slider CSS */
-
 .swiper-container {
   padding-top: 20px;
   padding-bottom: 50px;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
 }
 
 body {
@@ -219,12 +198,10 @@ body {
 }
 
 #navbarHolder {
-
   position: sticky;
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 161, 167, 1);
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 161, 167, 1);
   box-shadow: 0px 3px 0px 0px rgba(0, 161, 167, 1);
-
 }
 
 .custom-underline {
@@ -243,24 +220,23 @@ body {
 }
 
 .custom-underline::after {
-
   content: "";
   position: absolute;
 }
 
 .underline .custom-underline::after {
-  top: 110%;
-  height: 2.5px !important;
+  top: 120%;
+  height: 3px !important;
   width: 40%;
   left: 30%;
   background-color: rgb(0, 0, 0);
-  transition: 0.4s ease-out all .1s;
+  transition: 0.4s ease-out all 0.1s;
 }
 
 .underline:hover .custom-underline::after {
   width: 90%;
   left: 5%;
-  transition: 0.5s ease all;
+  transition: 0.4s ease-out all;
 }
 
 
@@ -270,6 +246,7 @@ body {
   position: absolute;
   background-color: #00A1A7;
   width: 100%;
+
 }
 
 .footer,
@@ -290,9 +267,10 @@ body {
 @media screen and (min-width: 1000px) {
   .box {
     float: left;
-    width: 33.33%;
+    width: 25%;
+    height: 100%;
     /* three boxes (use 25% for four, and 50% for two, etc) */
-    padding: 30px;
+    padding: 15px;
     /* if you want space between the images */
   }
 
@@ -320,13 +298,16 @@ body {
 
 #AboutMeTitle,
 #detailsTitle {
+  font-size: 200%;
   color: #04C2C9;
   font-family: 'Orbitron', sans-serif;
 }
 
-@media screen and (min-width: 1000px) {
-  .clearfix {
-    padding: 80px;
+@media screen and (max-width: 800px) {
+
+  #AboutMeTitle,
+  #detailsTitle {
+    font-size: 80%;
   }
 }
 
@@ -342,7 +323,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .square {
     position: relative;
     display: flex;
@@ -363,7 +344,11 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 30px;
+    height: 30px;
+
   }
+
 }
 
 .square {
@@ -372,10 +357,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
   clip-path: polygon(27% 10%, 73% 10%, 95% 50%, 73% 90%, 27% 90%, 5% 50%);
   background-color: #00A1A7;
+  animation-duration: 1s;
+  animation-delay: 3s;
 }
 
 
@@ -394,9 +381,13 @@ body {
   color: white;
 }
 
-.swiper-pagination-bullet {
-  opacity: .5;
-  /*was 0.2 and was impossible to see on some background images*/
+@media screen and (max-width: 900px) {
+
+  .fa-exclamation,
+  .fa-book-reader {
+    font-size: 10px;
+    color: white;
+  }
 }
 
 /* Swiper Arrows color */
@@ -405,4 +396,30 @@ body {
 .swiper-container-rtl .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
   fill: #d84677;
+}
+
+.pic-wrap {
+  filter: drop-shadow(-4px 0px 0px #d84677);
+}
+
+.pic-wrap:hover {
+  filter: drop-shadow(4px 0px 0px #00A1A7);
+}
+
+.clearfix p {
+  font-family: 'Exo 2', sans-serif;
+}
+
+#rightBox,
+#leftBox {
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+@media screen and (max-width: 700px) {
+
+  #SkillsTitleWrapper h3,
+  #ProfileTitleWrapper h3 {
+    font-size: 60%;
+  }
 }
