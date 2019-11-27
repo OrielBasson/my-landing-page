@@ -16,47 +16,36 @@ export class NavbarComponent implements OnInit {
 
   scrollToHome(event) {
     document.getElementById("home").scrollIntoView(true);
-  }
-
-  scrollToAbout(event) {
-    document.getElementById("about").scrollIntoView(true);
-  }
-
-  scrollToProjects(event) {
-    document.getElementById("projects").scrollIntoView(true);
-  }
-
-  scrollToContact(event) {
-    document.getElementById("contact").scrollIntoView(true);
-  }
-
-  turnProjectsActive(event) {
-    this.isProjectsActive = true;
-    this.isAboutActive = false;
-    this.isHomeActive = false;
-    this.isContactActive = false;
-  }
-
-  turnAboutActive(event) {
-    this.isAboutActive = true;
-    this.isProjectsActive = false;
-    this.isHomeActive = false;
-    this.isContactActive = false;
-  }
-
-  turnHomeActive(event) {
     this.isHomeActive = true;
     this.isAboutActive = false;
     this.isProjectsActive = false;
     this.isContactActive = false;
   }
 
-  turnContactActive(event) {
+  scrollToAbout(event) {
+    document.getElementById("about").scrollIntoView(true);
+    this.isAboutActive = true;
+    this.isProjectsActive = false;
+    this.isHomeActive = false;
+    this.isContactActive = false;
+  }
+
+  scrollToProjects(event) {
+    document.getElementById("projects").scrollIntoView(true);
+    this.isProjectsActive = true;
+    this.isAboutActive = false;
+    this.isHomeActive = false;
+    this.isContactActive = false;
+  }
+
+  scrollToContact(event) {
+    document.getElementById("contact").scrollIntoView(true);
     this.isContactActive = true;
     this.isHomeActive = false;
     this.isAboutActive = false;
     this.isProjectsActive = false;
   }
+
   // @HostListener("window:scroll", ["$event"])
   // doSomething(event) {
   //   this.isVisible = true;

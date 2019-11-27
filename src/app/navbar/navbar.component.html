@@ -11,26 +11,27 @@
     <div class="navbar-nav mx-auto">
       <ul class="navbar-nav mr-auto">
         <li class="nav-link">
-          <a [className]="isHomeActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToHome($event)"
-            (click)="turnHomeActive($event)">HOME <i class="fas fa-home"></i> </a>
+          <a [className]="isHomeActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToHome($event)">HOME <i
+              class="fas fa-home"></i> </a>
         </li>
 
         <li class="nav-link">
-          <a [className]="isAboutActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToAbout($event)"
-            (click)="turnAboutActive($event)">ABOUT ME
+          <a [className]="isAboutActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToAbout($event)">ABOUT
+            ME
             <i class="fas fa-exclamation-circle"></i>
           </a>
         </li>
 
+        <!-- 
         <li class="nav-link">
-          <a [className]="isProjectsActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToProjects($event)"
-            (click)="turnProjectsActive($event)">PROJECTS
+          <a [className]="isProjectsActive ? 'nav-link active' : 'nav-link inactive'"
+            (click)="scrollToProjects($event)">PROJECTS
             <i class="fas fa-code"></i></a>
-        </li>
+        </li> -->
 
         <li class="nav-link">
-          <a [className]="isContactActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToContact($event)"
-            (click)="turnContactActive($event)">CONTACT <i class="fas fa-envelope"></i>
+          <a [className]="isContactActive ? 'nav-link active' : 'nav-link inactive'"
+            (click)="scrollToContact($event)">CONTACT <i class="fas fa-envelope"></i>
           </a>
         </li>
         <li class="nav-link">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import Swiper from "swiper";
 
 @Component({
   selector: "app-about-section",
@@ -13,6 +14,27 @@ export class AboutSectionComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    var swiper = new Swiper(".swiper-container", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 3,
+        stretch: 5,
+        depth: 700,
+        modifier: 1,
+        slideShadows: false
+      },
+      pagination: {
+        el: ".swiper-pagination"
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+
     this.classPictureAnimation = "animated fadeInDown";
     this.classPulseAnimtaion2 = "animated pulse";
     this.classPulseAnimtaion = "animated pulse";

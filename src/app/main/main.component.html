@@ -1,4 +1,5 @@
 <div class="container-fluid">
+  <!-- detect-scroll (onScroll)="handleScroll($event)" -->
 
   <!-- Section 2 - Home -->
   <app-home-section></app-home-section>
@@ -9,20 +10,13 @@
   </span>
 
   <!-- Section 2 - About -->
-  <app-about-section></app-about-section>
 
-  <section id="projects">
-    <h1>Projects</h1>
-    <p>soon ...</p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius illum
-      voluptatibus doloremque impedit ipsa, tempora facere ipsum repellendus
-      eligendi fugiat ea, distinctio eaque corrupti aliquid. Nihil voluptatem
-      libero ipsum quis rerum obcaecati voluptates sunt dolores! Corrupti
-      reiciendis ipsam quisquam deleniti dolores quis, ullam rem esse. Deleniti
-      nam ex consequuntur totam.
-    </p>
-  </section>
+  <!-- <div id="about"></div> -->
+  <!-- *ngIf="isAboutVisible" -->
+  <div id="about">
+    <app-about-section *ngIf="isAboutVisible"></app-about-section>
+  </div>
+
 
   <section id="contact">
     <h1>Contact</h1>

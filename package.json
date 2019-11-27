@@ -35,6 +35,7 @@
     "jquery": "^2.2.4",
     "materialize-css": "^1.0.0",
     "ngx-bootstrap": "^5.2.0",
+    "ngx-scroll-event": "^1.0.8",
     "ngx-swiper-wrapper": "^8.0.2",
     "ngx-useful-swiper": "^8.0.1",
     "particles.js": "^2.0.0",

@@ -4,14 +4,15 @@ import { AlertModule } from "ngx-bootstrap";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { NgxUsefulSwiperModule } from "ngx-useful-swiper";
 import { NgxLazyElModule } from "@juristr/ngx-lazy-el";
+import { ScrollEventModule } from "ngx-scroll-event";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { LayoutComponent } from "./layout/layout.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { MainComponent } from "./main/main.component";
 import { RouterModule } from "@angular/router";
-import { HomeSectionComponent } from './main/home-section/home-section.component';
-import { AboutSectionComponent } from './main/about-section/about-section.component';
+import { HomeSectionComponent } from "./main/home-section/home-section.component";
+import { AboutSectionComponent } from "./main/about-section/about-section.component";
 
 const lazyConfig = [
   {
@@ -21,8 +22,14 @@ const lazyConfig = [
 ];
 
 @NgModule({
-  declarations: [LayoutComponent, MainComponent, HomeSectionComponent, AboutSectionComponent],
+  declarations: [
+    LayoutComponent,
+    MainComponent,
+    HomeSectionComponent,
+    AboutSectionComponent
+  ],
   imports: [
+    ScrollEventModule,
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,

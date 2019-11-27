@@ -9,6 +9,7 @@ import {
 import ParticlesConfig from "../../assets/data/ParticlesConfig.json";
 import { Router } from "@angular/router";
 import Swiper from "swiper";
+import { ScrollEvent } from "ngx-scroll-event";
 
 declare var particlesJS: any;
 
@@ -20,6 +21,7 @@ declare var particlesJS: any;
 })
 export class MainComponent implements OnInit {
   isNavbarVisible = false;
+  isAboutVisible = false;
 
   constructor(private router: Router) {}
 
@@ -30,5 +32,12 @@ export class MainComponent implements OnInit {
   @HostListener("window:scroll", ["$event"])
   doSomething(event) {
     this.isNavbarVisible = true;
+    this.isAboutVisible = true;
+  }
+
+  public handleScroll(event: ScrollEvent) {
+    if (event.isReachingBottom) {
+      console.log(`the user is reaching the bottom`);
+    }
   }
 }
