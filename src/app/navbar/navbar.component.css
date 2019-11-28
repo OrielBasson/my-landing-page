@@ -31,9 +31,17 @@
 .navbar .navbar-nav .nav-link>.active>a,
 .navbar .navbar-nav>.nav-link>a:hover,
 .navbar .navbar-nav>.nav-link>a:focus {
+  -moz-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
   color: #d84677;
 }
 
 .navbar .navbar-nav .nav-link a.active {
+  -moz-transition: all .6s ease-in;
+  -o-transition: all .6s ease-in;
+  -webkit-transition: all .6s ease-in;
+  transition: all .6s ease-in;
   color: #d84677;
 }
