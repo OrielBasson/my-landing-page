@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, HostListener } from "@angular/core";
 import Swiper from "swiper";
 
 @Component({
@@ -10,6 +10,7 @@ export class AboutSectionComponent implements OnInit {
   classPictureAnimation: string;
   classPulseAnimtaion2: string;
   classPulseAnimtaion: string;
+  isAboutVisible = false;
 
   constructor() {}
 

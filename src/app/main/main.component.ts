@@ -8,7 +8,6 @@ import {
 } from "@angular/core";
 import ParticlesConfig from "../../assets/data/ParticlesConfig.json";
 import { Router } from "@angular/router";
-import Swiper from "swiper";
 import { ScrollEvent } from "ngx-scroll-event";
 
 declare var particlesJS: any;
@@ -29,15 +28,19 @@ export class MainComponent implements OnInit {
     particlesJS("particles-js", ParticlesConfig, function() {});
   }
 
+  // @HostListener("window:scroll", ["$event"])
+  // doSomething(event) {
+
+  // }
+
   @HostListener("window:scroll", ["$event"])
-  doSomething(event) {
+  public scrollHandler(event) {
     this.isNavbarVisible = true;
     this.isAboutVisible = true;
-  }
-
-  public handleScroll(event: ScrollEvent) {
-    if (event.isReachingBottom) {
-      console.log(`the user is reaching the bottom`);
+    let obj = document.getElementById("home");
+    let objScrollHeight = Math.round(obj.scrollTop * 100) / 100;
+    if (objScrollHeight === obj.scrollHeight - obj.offsetHeight - 0.55) {
+      console.log("object to bottom");
     }
   }
 }

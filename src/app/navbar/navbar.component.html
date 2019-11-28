@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top animated bounceInLeft">
+<nav id="MyNavbar" *ngIf="navIsVisible" class="navbar navbar-expand-lg navbar-dark sticky-top animated bounceInLeft">
   <a class="navbar-brand" href="#">
     <!-- To add picture of my logo here!  -->
   </a>
@@ -11,12 +11,13 @@
     <div class="navbar-nav mx-auto">
       <ul class="navbar-nav mr-auto">
         <li class="nav-link">
-          <a [className]="isHomeActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToHome($event)">HOME <i
-              class="fas fa-home"></i> </a>
+          <a data-target="#home" [className]="isHomeActive ? 'nav-link active' : 'nav-link inactive'"
+            (click)="scrollToHome($event)">HOME <i class="fas fa-home"></i> </a>
         </li>
 
         <li class="nav-link">
-          <a [className]="isAboutActive ? 'nav-link active' : 'nav-link inactive'" (click)="scrollToAbout($event)">ABOUT
+          <a data-target="#about" [className]="isAboutActive ? 'nav-link active' : 'nav-link inactive'"
+            (click)="scrollToAbout($event)">ABOUT
             ME
             <i class="fas fa-exclamation-circle"></i>
           </a>
@@ -30,7 +31,7 @@
         </li> -->
 
         <li class="nav-link">
-          <a [className]="isContactActive ? 'nav-link active' : 'nav-link inactive'"
+          <a data-target="#contact" [className]="isContactActive ? 'nav-link active' : 'nav-link inactive'"
             (click)="scrollToContact($event)">CONTACT <i class="fas fa-envelope"></i>
           </a>
         </li>

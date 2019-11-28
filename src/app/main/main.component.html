@@ -2,8 +2,9 @@
   <!-- detect-scroll (onScroll)="handleScroll($event)" -->
 
   <!-- Section 2 - Home -->
-  <app-home-section></app-home-section>
-
+  <div id="home">
+    <app-home-section></app-home-section>
+  </div>
   <!-- Navbar -->
   <span *ngIf="isNavbarVisible">
     <dynamic-element-lazy-navbar *ngxLazyEl></dynamic-element-lazy-navbar>
@@ -13,7 +14,7 @@
 
   <!-- <div id="about"></div> -->
   <!-- *ngIf="isAboutVisible" -->
-  <div id="about">
+  <div id="about" (scroll)="scrollHandler($event)">
     <app-about-section *ngIf="isAboutVisible"></app-about-section>
   </div>
 
@@ -27,4 +28,5 @@
       minima debitis!
     </p>
   </section>
+
 </div>

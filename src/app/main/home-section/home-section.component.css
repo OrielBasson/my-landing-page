@@ -34,16 +34,6 @@
   animation-iteration-count: infinite;
 }
 
-#AboutTitle:hover {
-  color: #d84677;
-  animation-iteration-count: infinite;
-}
-
-#SkillsTitle:hover {
-  color: #d84677;
-  animation-iteration-count: infinite;
-}
-
 #OrielBassonTitle {
   font-size: 110%;
 }
@@ -134,6 +124,11 @@ h4 {
   font-family: 'Orbitron', sans-serif;
   color: aliceblue;
 }
+
+#HomeContent {
+  animation-duration: 1.5s;
+}
+
 
 h5 {
   cursor: pointer;

@@ -5,6 +5,7 @@ import { Component, OnInit, HostListener } from "@angular/core";
   styleUrls: ["./navbar.component.css"]
 })
 export class NavbarComponent implements OnInit {
+  navIsVisible = false;
   isProjectsActive = false;
   isAboutActive = false;
   isHomeActive = false;
@@ -46,8 +47,8 @@ export class NavbarComponent implements OnInit {
     this.isProjectsActive = false;
   }
 
-  // @HostListener("window:scroll", ["$event"])
-  // doSomething(event) {
-  //   this.isVisible = true;
-  // }
+  @HostListener("window:scroll", ["$event"])
+  navIsVisibleTrigger(event) {
+    this.navIsVisible = true;
+  }
 }
