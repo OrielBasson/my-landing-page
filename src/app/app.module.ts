@@ -5,6 +5,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { NgxUsefulSwiperModule } from "ngx-useful-swiper";
 import { NgxLazyElModule } from "@juristr/ngx-lazy-el";
 import { ScrollEventModule } from "ngx-scroll-event";
+import { ClipboardModule } from "ngx-clipboard";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { LayoutComponent } from "./layout/layout.component";
@@ -13,6 +14,7 @@ import { MainComponent } from "./main/main.component";
 import { RouterModule } from "@angular/router";
 import { HomeSectionComponent } from "./main/home-section/home-section.component";
 import { AboutSectionComponent } from "./main/about-section/about-section.component";
+import { ContactSectionComponent } from "./main/contact-section/contact-section.component";
 
 const lazyConfig = [
   {
@@ -26,7 +28,8 @@ const lazyConfig = [
     LayoutComponent,
     MainComponent,
     HomeSectionComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     ScrollEventModule,
@@ -36,7 +39,8 @@ const lazyConfig = [
     AlertModule.forRoot(),
     NgxUsefulSwiperModule,
     NgxLazyElModule.forRoot(lazyConfig),
-    RouterModule
+    RouterModule,
+    ClipboardModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

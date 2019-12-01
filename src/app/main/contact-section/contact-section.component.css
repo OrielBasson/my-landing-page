@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#contact {
+  clip-path: polygon(50% 35%, 100% 25%, 100% 100%, 50% 100%, 0 100%, 0 25%);
+  background-color: rgb(43, 44, 56);
+  position: relative;
+  overflow: hidden;
+}
+
+#about:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.25;
+  opacity: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+}
+
+div {
+  z-index: 1;
+}
+
+/* Footer CSS */
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  background-color: #1B242F;
+  width: 100%;
+}
+
+.footer,
+.push {
+  height: 250px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .footer,
+  .push {
+    height: 20px;
+  }
+}
+
+
+#contactTitle {
+  font-family: 'Orbitron', sans-serif;
+  padding-bottom: 250px;
+  color: #00A1A7;
+}
+
+
+/* Custom Underline Contact Title */
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.underline .custom-underline::after {
+  top: 120%;
+  height: 3px !important;
+  width: 40%;
+  left: 30%;
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s ease-out all 0.1s;
+}
+
+.underline:hover .custom-underline::after {
+  width: 90%;
+  left: 5%;
+  transition: 0.4s ease-out all;
+}
+
+.square {
+  margin: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 57px;
+  height: 57px;
+  /* clip-path: polygon(27% 10%, 73% 10%, 100% 50%, 73% 90%, 27% 90%, 0 50%); */
+  background-color: #00A1A7;
+}
+
+#emailBox {
+  color: white;
+}
