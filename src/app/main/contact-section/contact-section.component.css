@@ -141,3 +141,13 @@ div {
 #emailBox {
   color: white;
 }
+
+.fas,
+.fab {
+  color: white;
+}
+
+.fas:hover,
+.fab:hover {
+  color: #d84677;
+}

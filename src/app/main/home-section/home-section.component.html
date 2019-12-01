@@ -1,7 +1,12 @@
 <div class="container-fluid">
   <section id="home">
     <div id="particles-js"></div>
-    <br /><br /><br />
+
+    <div id="mainLogo" (mouseenter)="setPulseClassAnimation($event)" (mouseleave)="deletePulseClassAnimation($event)"
+      [ngClass]="getPulseClassAnimation()">
+      <img id="logoPic" src="../../../assets/images/png2.png">
+    </div>
+
     <div id="HomeContent" (mouseenter)="changeClassFunction($event)" (mouseleave)="changeClassFunctionOut($event)"
       [ngClass]="getAnimationClass()">
       <h3 id="HomeFirstLine">

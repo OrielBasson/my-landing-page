@@ -161,3 +161,9 @@ h5 {
   border-color: #00A1A7 !important;
   transition: all 0.4s ease 0s;
 }
+
+#logoPic {
+  margin: 50px;
+  width: 250px;
+  height: 100px;
+}

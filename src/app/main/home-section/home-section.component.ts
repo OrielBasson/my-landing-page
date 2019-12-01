@@ -40,7 +40,7 @@ export class HomeSectionComponent implements OnInit {
       }
     });
 
-    this.classPulseAnimtaion = "animated pulse";
+    this.classPulseAnimtaion = "animated fadeInDown";
     this.classAnimation = "animated fadeInUp";
 
     particlesJS("particles-js", ParticlesConfig, function() {});
