@@ -1,11 +1,21 @@
 <div class="container-fluid">
   <section id="contact">
+
+
     <div id="contactTitle">
       <div class="underline">
         <a class="custom-underline">
           <h1>CONTACT</h1>
         </a>
       </div>
+    </div>
+
+    <div id="titleAboveEmailBox">
+      <h4>
+        <small>
+          Have a question or want to work together?
+        </small>
+      </h4>
     </div>
 
     <div id="emailBox">
@@ -18,7 +28,7 @@
 
     <div class="wrapper">
       <div class="square">
-        <a>
+        <a class="link" href="https://www.facebook.com/orielbasson/" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-facebook-f"></i>
         </a>
       </div>
@@ -37,7 +47,8 @@
 
       <div class="square">
         <a>
-          <i class="fas fa-envelope" (click)="copyToClipBoard('oriel@orielbasson.com')"></i>
+          <i class="fas fa-envelope" (click)="copyToClipBoard('oriel@orielbasson.com')"
+            popover="Email was copied to clipboard" [outsideClick]="true"></i>
         </a>
       </div>
 

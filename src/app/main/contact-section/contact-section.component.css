@@ -4,14 +4,14 @@
 }
 
 #contact {
-  clip-path: polygon(50% 35%, 100% 25%, 100% 100%, 50% 100%, 0 100%, 0 25%);
+  clip-path: polygon(50% 15%, 100% 10%, 100% 100%, 0 100%, 0 10%);
   background-color: rgb(43, 44, 56);
   position: relative;
   overflow: hidden;
 }
 
 #about:before {
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   left: 0;
@@ -45,7 +45,7 @@ section::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  content: '';
+  content: "";
   width: 100%;
   height: 80%;
 }
@@ -64,7 +64,7 @@ div {
   text-align: center;
   bottom: 0;
   position: absolute;
-  background-color: #1B242F;
+  background-color: #1b242f;
   width: 100%;
 }
 
@@ -81,13 +81,11 @@ div {
   }
 }
 
-
 #contactTitle {
-  font-family: 'Orbitron', sans-serif;
-  padding-bottom: 250px;
-  color: #00A1A7;
+  font-family: "Orbitron", sans-serif;
+  padding-bottom: 30px;
+  color: #00a1a7;
 }
-
 
 /* Custom Underline Contact Title */
 .custom-underline {
@@ -134,20 +132,31 @@ div {
   text-align: center;
   width: 57px;
   height: 57px;
-  /* clip-path: polygon(27% 10%, 73% 10%, 100% 50%, 73% 90%, 27% 90%, 0 50%); */
-  background-color: #00A1A7;
+  background-color: #00a1a7;
 }
 
 #emailBox {
   color: white;
+  padding-top: 50px;
 }
 
 .fas,
 .fab {
+  cursor: pointer;
   color: white;
 }
 
 .fas:hover,
 .fab:hover {
   color: #d84677;
+}
+
+.popoverStyle {
+  width: 100px;
+}
+
+#titleAboveEmailBox h4 {
+  color: #00a1a7;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
 }

@@ -15,6 +15,7 @@ import { RouterModule } from "@angular/router";
 import { HomeSectionComponent } from "./main/home-section/home-section.component";
 import { AboutSectionComponent } from "./main/about-section/about-section.component";
 import { ContactSectionComponent } from "./main/contact-section/contact-section.component";
+import { PopoverModule } from "ngx-bootstrap/popover";
 
 const lazyConfig = [
   {
@@ -40,7 +41,8 @@ const lazyConfig = [
     NgxUsefulSwiperModule,
     NgxLazyElModule.forRoot(lazyConfig),
     RouterModule,
-    ClipboardModule
+    ClipboardModule,
+    PopoverModule.forRoot()
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
