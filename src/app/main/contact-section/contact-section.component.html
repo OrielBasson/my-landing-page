@@ -19,11 +19,17 @@
     </div>
 
     <div id="emailBox">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing., ipsum. ipsum dolor
-        sit amet, consectetur adipisicing elit. Sequi dicta numquam, adipisci
-        modi minima debitis!
-      </p>
+
+
+      <div class="field">
+        <input type="text" name="name" class="input" placeholder="Name" [(ngModel)]="email.name">
+        <br>
+        <input class="textarea" placeholder="Your Message" [(ngModel)]="email.bodyOfMessage">
+
+      </div>
+
+      <button type="submit" (click)="sendEmail(email)" class="button is-danger is-large">Submit</button>
+
     </div>
 
     <div class="wrapper">

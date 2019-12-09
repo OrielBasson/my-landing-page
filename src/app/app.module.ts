@@ -6,6 +6,8 @@ import { NgxUsefulSwiperModule } from "ngx-useful-swiper";
 import { NgxLazyElModule } from "@juristr/ngx-lazy-el";
 import { ScrollEventModule } from "ngx-scroll-event";
 import { ClipboardModule } from "ngx-clipboard";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { LayoutComponent } from "./layout/layout.component";
@@ -42,7 +44,9 @@ const lazyConfig = [
     NgxLazyElModule.forRoot(lazyConfig),
     RouterModule,
     ClipboardModule,
-    PopoverModule.forRoot()
+    PopoverModule.forRoot(),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
